@@ -46,7 +46,7 @@ A high-performance, responsive web application designed to display and manage a 
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/repository-name.git](https://github.com/your-username/repository-name.git)
+    git clone https://github.com/mohamedghazy/products-list-task.git
     cd repository-name
     ```
 2.  **Install dependencies:**
