@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Modern Product Management Dashboard
 
-## Getting Started
+A high-performance, responsive web application designed to display and manage a product catalog[cite: 3]. [cite_start]Built with **Next.js 14**, **TypeScript**, and **Shadcn UI**, this project demonstrates a complete frontend workflow, including secure authentication, real-time filtering, and advanced state management.
 
-First, run the development server:
+## 🚀 Live Demo
+**[Insert Your Vercel/Netlify Link Here]** 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Framework:** Next.js (App Router) 
+* **Language:** TypeScript for type-safe development 
+* **Styling:** Tailwind CSS & Shadcn UI 
+* **State Management:** React Context / TanStack Query 
+* **Icons:** Lucide React
+* **Authentication:** JWT/Token based with secure caching 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Authentication & Security
+* Full user registration and login functionality.
+* JWT/Token management and session caching[.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Product Experience
+* **Responsive Grid:** Seamless transitions between mobile and desktop views.
+* **Smart Search:** Real-time filtering by product title.
+* **Category Filtering:** Dynamic sorting based on product categories.
+* **Detailed Views:** Dedicated pages showing product images, titles, descriptions, and prices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Performance & UX
+* **Loading States:** Implementation of loaders for improved user feedback.
+* **Error Handling:** Robust handling for API and navigation errors.
+* **Component Architecture:** Modular structure for scalability and readability.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Prerequisites
+* Node.js 20.x or later
+* npm 
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/repository-name.git](https://github.com/your-username/repository-name.git)
+    cd repository-name
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+4.  **Open the app:** Navigate to `http://localhost:3000`.
+
+---
+
+## 🔗 API Documentation
+This project consumes a public API for product data.
+* [cite_start]**Postman Collection:** [Insert Your Postman Link Here] [cite: 11]
+
+---
+
+## 📂 Project Structure
+```text
+├── app/               # Next.js App Router (Pages & Layouts)
+├── components/        # Reusable UI components (Shadcn & Custom)
+├── hooks/             # Custom React hooks for logic
+├── lib/               # Utility functions and API clients
+├── types/             # TypeScript interfaces
+└── public/            # Static assets
