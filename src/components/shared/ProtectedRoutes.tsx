@@ -10,11 +10,16 @@ export default function ProtectedRoutes({ children }: { children: React.ReactNod
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
-    if (!isAuthenticated) {
+    const timeout = setTimeout(() => setIsMounted(true), 0);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    // Wait until mounted to avoid hydration mismatch
+    if (isMounted && !isAuthenticated) {
       router.push('/login');
     }
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, isMounted, router]);
 
   if (!isMounted) {
     return null; // Don't render anything while hydrating
