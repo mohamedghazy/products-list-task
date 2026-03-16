@@ -3,7 +3,7 @@
 A high-performance, responsive web application designed to display and manage a product catalog[cite: 3]. [cite_start]Built with **Next.js 14**, **TypeScript**, and **Shadcn UI**, this project demonstrates a complete frontend workflow, including secure authentication, real-time filtering, and advanced state management.
 
 ## 🚀 Live Demo
-**[Insert Your Vercel/Netlify Link Here]** 
+**[Live Demo](https://products-list-task.vercel.app/login)** 
 
 ---
 
